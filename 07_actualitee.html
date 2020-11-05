@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Meta donnée -->
+  <meta charset="UTF-8">
+
+<!-- Mise en place su responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- descriptif de la page -->
+    <meta name="description" content="Le Site officiel de l'Hôtel Parimis propose le meilleur tarif garanti. L’hôtel 5 étoiles Champs-Elysées Arc de Triomphe, propose des services de luxe proche des Champs Elysées.">
+
+<!-- Titre de la page -->
+    <title>Presse & Actualitée</title> 
+
+<!-- Récupération de la police d'écriture via google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+<!-- -->
+    <link rel="stylesheet" href="css/00_reset.css">
+
+<!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--lien animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+<!-- Lien du css -->
+    <link rel="stylesheet" href="css/01_style.css">
+    <link rel="stylesheet" href="css/02_nav_footer.html.css">
+    <link rel="stylesheet" href="css/03_main.css">
+</head>
+
+<body>
+    <p id="fondSmart"><img src="image/nav/smart/accueil.webp" alt="hall entrée hotel" class="width"></p>
+
+    <p id="fondFull"><img src="image/nav/full/actu.webp" alt="hall entrée hotel" class="width"></p>
+
+    <nav>
+  <!-- Logo bar navigation -->
+      <div class="logo"><a href="index.html"><img src="image/logo/liseret2.png" alt="logo hotel parimis"></a></div>
+        
+  <!-- Menu Hotel Restaurant Spa -->
+        <ul class="flex">
+  <!-- Menu Hotel -->        
+          <li class="toggle hotel">
+            <div class="tripleLigneL">
+              <div class="middleLigneL"></div>
+              <div class="bottomLigneL"></div>
+            </div>
+            <h2 class="flex center"><a href="#">Hôtel</a></h2>
+  <!-- Sous Menu Hotel --> 
+            <div class="sousMenu flex">           
+              <ul>
+                <li><a href="01_hotel.html">L'hotel</a></li>
+                <li><a href="02_chambre_classique.html">Chambre classique</a></li>
+                <li><a href="02_chambre_confort.html">Chambre confort</a></li>
+                <li><a href="02_chambre_deluxe.html">Gamme deluxe</a></li>
+                <li><a href="02_chambre_suite.html">La suite</a></li>
+              </ul>
+  <!-- Image menu Hotel -->            
+              <ul class="image">
+                <li><h3><a href="02_chambre.html">Chambre</a></h3></li>
+                <li><img src="image/nav/full/chambre.webp" alt="Chambre Parimis"></li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Restaurant -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Restaurant</a></h2>
+  <!-- Sous Menu Restaurant -->
+            <div class="sousMenu flex">
+              <ul>
+                <li><a href="03_restaurant.html#brasserie">Carte brasserie</a></li>
+                <li><a href="03_restaurant.html#degustation">Carte restaurant</a></li>
+                <li><a href="03_restaurant.html#terasse">Dégustation</a></li>
+              </ul>
+  <!-- Image menu Restaurant -->
+              <ul class="image">
+                <li><h3><a href="03_restaurant.html">Restaurant</a></h3></li>
+                <li><img src="image/nav/full/restaurant.webp"   alt="restaurant Parimis"></li>
+              </ul>
+            </div>
+          </li>   
+  <!-- Menu Spa --> 
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Spa</a></h2>
+  <!-- Sous menu Spa -->
+            <div  class="sousMenu flex">
+              <ul>
+                <li><a href="04_spa.html#soinDetente">Minute détente</a></li>
+                <li><a href="04_spa.html#soinDecouverte">Moment découverte</a></li>
+                <li><a href="04_spa.html#soinRelaxant">Instant relaxant</a></li>
+                <li><a href="04_spa.html#soinPlaisir">Espace plaisir</a></li>
+                <li><a href="04_spa.html#soinEvasion">Page evasion</a></li>
+              </ul>
+  <!-- Image Spa-->    
+              <ul class="image">
+                <li><h3><a href="04_spa.html">Spa</a></h3></li>
+                <li><img src="image/nav/full/spa.webp" alt="spa Parimis"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        
+  <!-- Bloc recherche -->
+        <form id="pannier">
+          <div>
+            <i class="fas fa-search"></i>  <input type="text" id="recherche1" placeholder="Recherche">
+          </div>
+        
+          <div>
+            <p><i class="fas fa-shopping-bag"></i></p> 
+            <p>Fr <span>/</span> Eng</p>
+          </div>
+        </form>
+        
+  <!-- Menu Réservation Evènement Contact -->
+        <ul class="flex">
+  <!-- Menu Réservation -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Réservation</a></h2>
+  <!-- Sous menu reservation -->
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="05_reservation.html">Chambre</a></li>
+                <li><a href="05_reservation.html">Restaurant</a></li>
+                <li><a href="05_reservation.html">Spa</a></li>
+              </ul>
+  <!-- Newsletter menu reservation -->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                      <input type="email" class="form-control" placeholder="email" value="Email">
+                      <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu reservation -->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Evènement -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Rencontre</a></h2>
+  <!-- Sous menu evenement -->
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="06_evenement.html">Evènement</a></li>
+                <li><a href="07_actualitee.html">Actualité</a></li>
+                <li><a href="07_actualitee.html#press">La presse en Parle</a></li>
+              </ul>
+  <!-- Newsletter menu evenement-->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                    <input type="email" class="form-control" placeholder="email" value="Email">
+                    <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu evenement-->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Contact -->
+          <li class="toggle contact">
+            <div class="tripleLigneR">
+              <div class="middleLigneR"></div>
+              <div class="bottomLigneR"></div>
+            </div>
+            <h2 class="flex center"><a href="#">Contact</a></h2>
+  <!-- Sous menu contact -->  
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="09_acces_contact.html">Accès</a></li>
+                <li><a href="01_hotel.html#recrutement">Recrutement</a></li>
+                <li><a href="09_acces_contact.html#contact">Contact</a></li>
+              </ul>
+  <!-- Newsletter contact-->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                    <input type="email" class="form-control" placeholder="email" value="Email">
+                    <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu contact-->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html#contact" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>                
+        </ul>
+    </nav>
+
+    <header>
+        <section id="separateur">
+            <div id="separateurHaut">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 100" preserveAspectRatio="none" class="width">
+                <path d="M 0,100 L 500,0 L 1000,100">
+              </svg>
+            </div>
+        
+            <div class="logo"><img src="image/logo/logo.png" alt="logo Parimis"></div>
+          </section>
+
+    </header>
+
+    <main class="container">
+      <section class="form-row col-lg-12">
+        <h2 class="col-lg-12">Press</h2>
+        <div class="card mb-3 col-lg-4 p-0" style="max-width: 540px;">
+          <div class="row no-gutters h-100">
+            <div class="bg-primary col-md-4 p-0">
+              <img src="image/actu_press/hotel.webp" class="card-img" alt="fashion week">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://www.lhotellerie-restauration.fr/journal/formation-ecole/2020-05/travaux-realises-conjointement-avec-les-apprentis-du-cfa-mederic-et-l-association-o-service-comment.htm">les gestes barrières</a></h5>
+                <p class="card-text">Travaux réalisés conjointement avec les Apprentis du CFA Méderic et l'association Ô Service « Comment faire pour que les gestes barrières et préventifs actuels ne deviennent pas des barrières à nos gestes de service ? »</p>
+                <p class="card-text"><small class="text-muted">hotel & restaurant</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 p-0" style="max-width: 540px;">
+          <div class="row no-gutters h-100">
+            <div class="bg-primary col-md-4 p-0">
+              <img src="image/actu_press/le_monde.webp" class="card-img" alt="fashion week">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://www.lemonde.fr/campus/article/2020/03/02/les-formations-en-tourisme-plus-vertes-que-la-realite-du-secteur_6031549_4401467.html">les formations</a></h5>
+                <p class="card-text">Au-delà de la niche de l’écotourisme, les licences ou masters prennent de plus en plus en compte les préoccupations environnementales. Au risque d’aller plus vite que l’évolution réelle des emplois.
+                </p>
+                <p class="card-text"><small class="text-muted">le Monde</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 p-0" style="max-width: 540px;">
+          <div class="row no-gutters h-100">
+            <div class="bg-primary col-md-4 p-0">
+              <img src="image/actu_press/liberation.webp" class="card-img" alt="fashion week">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://www.liberation.fr/france/2019/12/25/l-hotel-chambres-d-echo_1771062">L’hôtel, chambres d’écho</a></h5>
+                <p class="card-text">Grand palace ou petite auberge, ils sont plus qu’un simple endroit où passer la nuit. Le Pavillon de l’Arsenal consacre une exposition à ces lieux qui catalysent la ville et reflètent les évolutions de notre société.</p>
+                <p class="card-text"><small class="text-muted">Libération</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="blocLogo flex my-5">
+        <p class="logo">
+          <img src="image/logo/logo.png" alt="">
+        </p>
+        
+        <p class="fleche">
+          <a href="#"><img src="image/b.png" alt="flèche blanche"></a>
+        </p>
+      </div>
+
+      <section class="form-row m-auto">
+        <h2 class="col-lg-12">Actualité</h2>
+        <div id="tabs" class="form-row col-lg-12">
+          <ul class="bg-primary col-lg-3 p-0 m-0">
+            <li class="border"><a href="#tabs-1" class="text-light">Article 1</a></li>
+            <li class="border"><a href="#tabs-2" class="text-light">Article 2</a></li>
+            <li class="border"><a href="#tabs-3" class="text-light">Article 3</a></li>
+            <li class="border"><a href="#tabs-4" class="text-light">Article 4</a></li>
+            <li class="border"><a href="#tabs-5" class="text-light">Article 5</a></li>
+            <li class="border"><a href="#tabs-6" class="text-light">Article 6</a></li>
+            <li class="border"><a href="#tabs-7" class="text-light">Article 7</a></li>
+            <li class="border"><a href="#tabs-8" class="text-light">Article 8</a></li>
+            <li class="border"><a href="#tabs-9" class="text-light">Article 9</a></li>
+            <li class="border"><a href="#tabs-10" class="text-light">Article 10</a></li>
+            <li class="border"><a href="#tabs-11" class="text-light">Article 11</a></li>
+            <li class="border"><a href="#tabs-12" class="text-light">Article 12</a></li>
+            <li class="border"><a href="#tabs-13" class="text-light">Article 13</a></li>
+            <li class="border"><a href="#tabs-14" class="text-light">Article 14</a></li>
+            <li class="border"><a href="#tabs-15" class="text-light">Article 15</a></li>
+          </ul>
+          <!-- Article 1-->
+          <div id="tabs-1" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 1</h2>
+            <p>
+              Travaux réalisés conjointement avec les Apprentis du CFA Méderic et l'association Ô Service « Comment faire pour que les gestes barrières et préventifs actuels ne deviennent pas des barrières à nos gestes de service ? »
+              « La date de la réouverture des établissements de restauration est toujours incertaine. Toutefois, dans un contexte post covid aussi traumatisant, il nous est impossible d’imaginer un retour à la normale. De toute évidence, nous allons devoir réadapter l’accueil et le service apportés à nos clientèles, en redéfinissant un nouveau parcours sécuritaire pour nos clients. Les directives et contraintes sanitaires à venir devront être appliquées avec beaucoup de professionnalisme et de cohérence. Nous en sommes tous biens conscients. Il sera du devoir du responsable de l’entreprise de les rendre les moins contraignantes possible pour ses collaborateurs. Alors comment faire pour se réinventer dans un contexte aussi anxiogène ?
+
+              Ensemble, avec calme et bon sens, nous avons réfléchi à ces sujets, afin que nous puissions savourer au plus vite, les plaisirs de la table et la convivialité retrouvée d’un service en salle ; toute cette alchimie qui fait que nous aimons autant nos restaurants. Notre art de vivre à la française va évoluer. Soyons avant-gardistes, créatifs et innovants. » <span>Denis Courtiade</span>
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/formation-ecole/2020-05/travaux-realises-conjointement-avec-les-apprentis-du-cfa-mederic-et-l-association-o-service-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 2-->
+          <div id="tabs-2" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 2</h2>
+            <p>
+              Parce que le secteur du tourisme et de la restauration attend à son tour son "11 mai", bon nombre de professionnels s’interrogent sur les formations, les actions sanitaires, managériales et commerciales à mettre en œuvre pour relancer économiquement leur établissement.
+
+              Comment renouer avec les ventes au plus vite et par quelles solutions réactives ?
+              Quel management mettre en place pour les équipes au contact de la clientèle à l’heure de la réouverture ?
+              Quels protocoles envisager en cuisine pour organiser le travail et rassurer les équipes 
+              Comment analyser les premiers retours d’expérience en hôtellerie et en tirer des leçons efficaces ?
+              Les Ateliers du Succès invitent les professionnels et institutionnels à leur 2e webinaire avec quatre meilleurs ouvriers de France.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/webinaire-rouvrir-son-hotel-ou-son-restaurant-oui-mais-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 3-->
+          <div id="tabs-3" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 3</h2>
+            <p>
+              Le groupe hôtelier et l’assureur ont annoncé avoir conclu un partenariat stratégique visant à proposer une assistance médicale aux clients des 5 000 hôtels Accor à travers le monde. Dès juillet 2020, il permettra aux hôtes du groupe d’accéder aux offres médicales d’Axa Partners, entité internationale d’AXA spécialisée dans les services d’assistance, l’assurance voyage et l’assurance-crédit.
+
+              Les clients du groupe Accor bénéficieront ainsi d’un accès gratuit aux téléconsultations médicales proposées par Axa ainsi qu’à son réseau comptant des dizaines de milliers de professionnels de santé agréés. Les hôtels seront désormais en mesure d’orienter au mieux leurs clients (langue, spécialiste, etc.) dans les 110 destinations où Accor est présent.
+
+              Cette offre médicale vient compléter le plan de relance du groupe, et s’inscrit dans les protocoles de santé et de prévention renforcés mis en place par le Groupe.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/hotellerie/2020-05/accor-et-axa-nouent-un-partenariat-d-assistance-medicale-mondial.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 4-->
+          <div id="tabs-4" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 4</h2>
+            <p>
+              Ofyr est un appareil au design épuré qui met une petite touche de fantaisie à l’extérieur. Trois chefs étoilés se sont équipés d’un Ofyr : David Gallienne, Le Jardin des Plumes à Giverny, Edouard Loubet, du Domaine de Capelongue à Bonnieux et Michel Sarran, chef du restaurant éponyme à Toulouse. Ofyr permet de saisir en son centre, tandis que les bords assurent une cuisson plus modérée où les aliments peuvent être réservés. On peut également utiliser la largeur de la plaque de cuisson en plancha ou en mode barbecue en combiné avec le gril. Ofyr peut également équiper les terrasses pour le partage d’un bon plat ou simplement pour se réchauffer.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/equipement-materiel/2020-05/ofyr-un-brasero-plancha-et-grill-a-la-fois.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 5-->
+          <div id="tabs-5" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 5</h2>
+            <p>
+              C’est quoi l’esprit Bridor ?
+
+              Bridor a été créé il y a un peu plus de 30 ans par Louis le Duff, président fondateur du groupe Le Duff.  C’est une entreprise industrielle qui conçoit, fabrique et livre des pains et des viennoiseries premium surgelées - un procédé qui garantit une qualité sanitaire optimale des aliments - crus, PAC ou précuits. La force de Bridor s’appuie depuis toujours sur le respect de la qualité, du goût et de la santé. Ces valeurs fortes sont ancrées dans une chaîne de production ultra-contrôlée,  un sourcing responsable et prioritairement local des matières premières rigoureusement sélectionnées. Tous nos produits sont fabriqués au sein de nos deux usines ultra-sécurisés situées en Bretagne (un troisième site verra le jour en 2022)  où nos collaborateurs, tous formés à la sécurité des aliments, préparent les produits qui sont sur les tables d’aujourd’hui et de demain.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/bridor-des-innovations-pain-et-viennoiserie-au-service-de-la-qualite-du-gout-et-de-la-sante.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 6-->
+          <div id="tabs-6" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 6</h2>
+            <p>
+              Travaux réalisés conjointement avec les Apprentis du CFA Méderic et l'association Ô Service « Comment faire pour que les gestes barrières et préventifs actuels ne deviennent pas des barrières à nos gestes de service ? »
+              « La date de la réouverture des établissements de restauration est toujours incertaine. Toutefois, dans un contexte post covid aussi traumatisant, il nous est impossible d’imaginer un retour à la normale. De toute évidence, nous allons devoir réadapter l’accueil et le service apportés à nos clientèles, en redéfinissant un nouveau parcours sécuritaire pour nos clients. Les directives et contraintes sanitaires à venir devront être appliquées avec beaucoup de professionnalisme et de cohérence. Nous en sommes tous biens conscients. Il sera du devoir du responsable de l’entreprise de les rendre les moins contraignantes possible pour ses collaborateurs. Alors comment faire pour se réinventer dans un contexte aussi anxiogène ?
+
+              Ensemble, avec calme et bon sens, nous avons réfléchi à ces sujets, afin que nous puissions savourer au plus vite, les plaisirs de la table et la convivialité retrouvée d’un service en salle ; toute cette alchimie qui fait que nous aimons autant nos restaurants. Notre art de vivre à la française va évoluer. Soyons avant-gardistes, créatifs et innovants. » <span>Denis Courtiade</span>
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/formation-ecole/2020-05/travaux-realises-conjointement-avec-les-apprentis-du-cfa-mederic-et-l-association-o-service-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 7-->
+          <div id="tabs-7" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 7</h2>
+            <p>
+              Parce que le secteur du tourisme et de la restauration attend à son tour son "11 mai", bon nombre de professionnels s’interrogent sur les formations, les actions sanitaires, managériales et commerciales à mettre en œuvre pour relancer économiquement leur établissement.
+
+              Comment renouer avec les ventes au plus vite et par quelles solutions réactives ?
+              Quel management mettre en place pour les équipes au contact de la clientèle à l’heure de la réouverture ?
+              Quels protocoles envisager en cuisine pour organiser le travail et rassurer les équipes 
+              Comment analyser les premiers retours d’expérience en hôtellerie et en tirer des leçons efficaces ?
+              Les Ateliers du Succès invitent les professionnels et institutionnels à leur 2e webinaire avec quatre meilleurs ouvriers de France.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/webinaire-rouvrir-son-hotel-ou-son-restaurant-oui-mais-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 8-->
+          <div id="tabs-8" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 8</h2>
+            <p>
+              Le groupe hôtelier et l’assureur ont annoncé avoir conclu un partenariat stratégique visant à proposer une assistance médicale aux clients des 5 000 hôtels Accor à travers le monde. Dès juillet 2020, il permettra aux hôtes du groupe d’accéder aux offres médicales d’Axa Partners, entité internationale d’AXA spécialisée dans les services d’assistance, l’assurance voyage et l’assurance-crédit.
+
+              Les clients du groupe Accor bénéficieront ainsi d’un accès gratuit aux téléconsultations médicales proposées par Axa ainsi qu’à son réseau comptant des dizaines de milliers de professionnels de santé agréés. Les hôtels seront désormais en mesure d’orienter au mieux leurs clients (langue, spécialiste, etc.) dans les 110 destinations où Accor est présent.
+
+              Cette offre médicale vient compléter le plan de relance du groupe, et s’inscrit dans les protocoles de santé et de prévention renforcés mis en place par le Groupe.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/hotellerie/2020-05/accor-et-axa-nouent-un-partenariat-d-assistance-medicale-mondial.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 9-->
+          <div id="tabs-9" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 9</h2>
+            <p>
+              Ofyr est un appareil au design épuré qui met une petite touche de fantaisie à l’extérieur. Trois chefs étoilés se sont équipés d’un Ofyr : David Gallienne, Le Jardin des Plumes à Giverny, Edouard Loubet, du Domaine de Capelongue à Bonnieux et Michel Sarran, chef du restaurant éponyme à Toulouse. Ofyr permet de saisir en son centre, tandis que les bords assurent une cuisson plus modérée où les aliments peuvent être réservés. On peut également utiliser la largeur de la plaque de cuisson en plancha ou en mode barbecue en combiné avec le gril. Ofyr peut également équiper les terrasses pour le partage d’un bon plat ou simplement pour se réchauffer.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/equipement-materiel/2020-05/ofyr-un-brasero-plancha-et-grill-a-la-fois.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 10-->
+          <div id="tabs-10" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 10</h2>
+            <p>
+              C’est quoi l’esprit Bridor ?
+
+              Bridor a été créé il y a un peu plus de 30 ans par Louis le Duff, président fondateur du groupe Le Duff.  C’est une entreprise industrielle qui conçoit, fabrique et livre des pains et des viennoiseries premium surgelées - un procédé qui garantit une qualité sanitaire optimale des aliments - crus, PAC ou précuits. La force de Bridor s’appuie depuis toujours sur le respect de la qualité, du goût et de la santé. Ces valeurs fortes sont ancrées dans une chaîne de production ultra-contrôlée,  un sourcing responsable et prioritairement local des matières premières rigoureusement sélectionnées. Tous nos produits sont fabriqués au sein de nos deux usines ultra-sécurisés situées en Bretagne (un troisième site verra le jour en 2022)  où nos collaborateurs, tous formés à la sécurité des aliments, préparent les produits qui sont sur les tables d’aujourd’hui et de demain.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/bridor-des-innovations-pain-et-viennoiserie-au-service-de-la-qualite-du-gout-et-de-la-sante.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 11-->
+          <div id="tabs-11" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 11</h2>
+            <p>
+              Travaux réalisés conjointement avec les Apprentis du CFA Méderic et l'association Ô Service « Comment faire pour que les gestes barrières et préventifs actuels ne deviennent pas des barrières à nos gestes de service ? »
+              « La date de la réouverture des établissements de restauration est toujours incertaine. Toutefois, dans un contexte post covid aussi traumatisant, il nous est impossible d’imaginer un retour à la normale. De toute évidence, nous allons devoir réadapter l’accueil et le service apportés à nos clientèles, en redéfinissant un nouveau parcours sécuritaire pour nos clients. Les directives et contraintes sanitaires à venir devront être appliquées avec beaucoup de professionnalisme et de cohérence. Nous en sommes tous biens conscients. Il sera du devoir du responsable de l’entreprise de les rendre les moins contraignantes possible pour ses collaborateurs. Alors comment faire pour se réinventer dans un contexte aussi anxiogène ?
+
+              Ensemble, avec calme et bon sens, nous avons réfléchi à ces sujets, afin que nous puissions savourer au plus vite, les plaisirs de la table et la convivialité retrouvée d’un service en salle ; toute cette alchimie qui fait que nous aimons autant nos restaurants. Notre art de vivre à la française va évoluer. Soyons avant-gardistes, créatifs et innovants. » <span>Denis Courtiade</span>
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/formation-ecole/2020-05/travaux-realises-conjointement-avec-les-apprentis-du-cfa-mederic-et-l-association-o-service-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 12-->
+          <div id="tabs-12" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 12</h2>
+            <p>
+              Parce que le secteur du tourisme et de la restauration attend à son tour son "11 mai", bon nombre de professionnels s’interrogent sur les formations, les actions sanitaires, managériales et commerciales à mettre en œuvre pour relancer économiquement leur établissement.
+
+              Comment renouer avec les ventes au plus vite et par quelles solutions réactives ?
+              Quel management mettre en place pour les équipes au contact de la clientèle à l’heure de la réouverture ?
+              Quels protocoles envisager en cuisine pour organiser le travail et rassurer les équipes 
+              Comment analyser les premiers retours d’expérience en hôtellerie et en tirer des leçons efficaces ?
+              Les Ateliers du Succès invitent les professionnels et institutionnels à leur 2e webinaire avec quatre meilleurs ouvriers de France.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/webinaire-rouvrir-son-hotel-ou-son-restaurant-oui-mais-comment.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 13-->
+          <div id="tabs-13" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 13</h2>
+            <p>
+              Le groupe hôtelier et l’assureur ont annoncé avoir conclu un partenariat stratégique visant à proposer une assistance médicale aux clients des 5 000 hôtels Accor à travers le monde. Dès juillet 2020, il permettra aux hôtes du groupe d’accéder aux offres médicales d’Axa Partners, entité internationale d’AXA spécialisée dans les services d’assistance, l’assurance voyage et l’assurance-crédit.
+
+              Les clients du groupe Accor bénéficieront ainsi d’un accès gratuit aux téléconsultations médicales proposées par Axa ainsi qu’à son réseau comptant des dizaines de milliers de professionnels de santé agréés. Les hôtels seront désormais en mesure d’orienter au mieux leurs clients (langue, spécialiste, etc.) dans les 110 destinations où Accor est présent.
+
+              Cette offre médicale vient compléter le plan de relance du groupe, et s’inscrit dans les protocoles de santé et de prévention renforcés mis en place par le Groupe.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/hotellerie/2020-05/accor-et-axa-nouent-un-partenariat-d-assistance-medicale-mondial.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 14-->
+          <div id="tabs-14" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 14</h2>
+            <p>
+              Ofyr est un appareil au design épuré qui met une petite touche de fantaisie à l’extérieur. Trois chefs étoilés se sont équipés d’un Ofyr : David Gallienne, Le Jardin des Plumes à Giverny, Edouard Loubet, du Domaine de Capelongue à Bonnieux et Michel Sarran, chef du restaurant éponyme à Toulouse. Ofyr permet de saisir en son centre, tandis que les bords assurent une cuisson plus modérée où les aliments peuvent être réservés. On peut également utiliser la largeur de la plaque de cuisson en plancha ou en mode barbecue en combiné avec le gril. Ofyr peut également équiper les terrasses pour le partage d’un bon plat ou simplement pour se réchauffer.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/equipement-materiel/2020-05/ofyr-un-brasero-plancha-et-grill-a-la-fois.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere_deux.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+          <!-- Article 15-->
+          <div id="tabs-15" class="col-lg-9 border p-0">
+            <!-- Text -->
+            <h2>Article 15</h2>
+            <p>
+              C’est quoi l’esprit Bridor ?
+
+              Bridor a été créé il y a un peu plus de 30 ans par Louis le Duff, président fondateur du groupe Le Duff.  C’est une entreprise industrielle qui conçoit, fabrique et livre des pains et des viennoiseries premium surgelées - un procédé qui garantit une qualité sanitaire optimale des aliments - crus, PAC ou précuits. La force de Bridor s’appuie depuis toujours sur le respect de la qualité, du goût et de la santé. Ces valeurs fortes sont ancrées dans une chaîne de production ultra-contrôlée,  un sourcing responsable et prioritairement local des matières premières rigoureusement sélectionnées. Tous nos produits sont fabriqués au sein de nos deux usines ultra-sécurisés situées en Bretagne (un troisième site verra le jour en 2022)  où nos collaborateurs, tous formés à la sécurité des aliments, préparent les produits qui sont sur les tables d’aujourd’hui et de demain.
+            </p>
+            <!-- Bouton lire + -->
+            <p class="w-100 text-right">
+              <a href="https://www.lhotellerie-restauration.fr/journal/salon-concours-syndicat-association/2020-05/bridor-des-innovations-pain-et-viennoiserie-au-service-de-la-qualite-du-gout-et-de-la-sante.htm" class="btn btn-primary">En savoir plus...</a>
+            </p>
+            <!-- Liseré -->
+            <p class="w-100 p-0 m-0 whiteSpace">
+              <img src="image/actu_press/lisere.webp" alt="Paris de nuit" class="w-100">
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="logo"><a href="index.html"><img src="image/logo/liseret2.png" alt="logo hotel parimis"></a></div>
+<!-- Bloc icone du footer -->
+      <section id="hautFooter" class="flex">
+        <p class="flex">
+          <a href="09_acces_contact.html#contact" title="Adresse postale">
+            <i class="fas fa-envelope-open-text"></i>
+          </a>
+          
+          <a href="#" title="Imprimer la page" onclick="print();">
+            <i class="fas fa-print"></i>
+          </a>
+
+          <a href="mailto:adresse@email.com" title="Envoyer un mail">
+            <i class="fas fa-at"></i>
+          </a>
+          
+          <a href="10_avis.html" title="Donner votre avis">
+            <i class="fas fa-pen-fancy" title="laisser un avis"></i>
+          </a>
+          
+        </p>
+
+        <p class="flex">
+          <a href="#">
+            <i class="fab fa-instagram" title="Intagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-facebook-f" title="Facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin-in" title="Linkedin"></i>
+          </a>
+        
+          <a href="#">
+            <i class="far fa-share-square" title="Partager la page"></i>
+          </a>
+        </p>
+      </section>
+
+<!-- Bloc cgv cgu ml ps-->
+<!-- class decor, élément de décoration inserer en js -->
+      <section id="basFooter" class="flex width">
+        <div class="flex  width">
+          <p class="decor"><a href="11_mention_lega.html"> Mention Légal</a></p>
+        </div>
+        
+        <div class="flex width">
+          <p class="decor"><a href="12_condition_vente.html"> Condition Général de vente</a></p>
+        </div>
+        
+        <div class="flex width">
+          <p class="decor"><a href="13_sitemap.html"> Plan du site</a></p>
+        </div>
+
+        <div class="flex width">
+          <p class="decor"><a href="14_condition_gnr_util.html"> Condition général d'utilisation</a></p>
+        </div>
+        
+      </section> 
+
+      <p>&#169; Manuhiri ANIHIA site portfolio</p>
+    
+    </footer>
+
+
+<!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="js/01_style.js"></script>
+
+<!-- Script font awesome -->
+    <script src="https://kit.fontawesome.com/6844cc6fe5.js" crossorigin="anonymous"></script>
+</body>
+</html>

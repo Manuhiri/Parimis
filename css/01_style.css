@@ -1,0 +1,285 @@
+*, *:before, *:after{box-sizing: border-box;
+}
+
+html{font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a{text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: white;
+    border-bottom: #F73400 solid 1px;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
+}
+
+main{max-width: 1200 px; /*à corriger*/
+    text-align: justify;
+}
+
+h1{font-size: 3em;
+    font-weight: 800;
+    color: #02144E;
+}
+
+h2, h3, label{
+    font-size: 1.5em;
+}
+
+h5 {padding: 10px;
+    font-family: 'Rouge Script', cursive;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+h4{
+    font-size: 1.3em;  
+}
+
+p{margin: unset;
+}
+
+ol{
+    list-style: inside;
+}
+
+i, span {
+    color: #F73400;
+}
+
+
+/****************************************************/
+/******* personalisation de bootstrap & jquery ******/
+/****************************************************/
+.text-primary{
+    color: #02144E!important;
+}
+
+.text-secondary{
+    color: #F73400!important;
+}
+
+.border {
+    border-color: #F73400!important;
+}
+
+.bg-primary{
+    background-color: #02144E!important;
+    padding: 5px 10px;
+}
+
+.bg-secondary{
+    background: rgba(2, 20, 78, 60%)!important;
+}
+
+.btn-primary{
+    background-color: #02144E;
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid #F73400;
+}
+
+.btn-primary:hover{
+    background-color: #F73400;
+    border-color: #02144E;
+}
+
+.ui-datepicker-header span{
+    color: white;
+}
+
+.ui-datepicker-header{
+    background-color: #02144E;
+    border: 1px solid #F73400;
+}
+
+table span{
+    color: #02144E;
+}
+
+.card-img{
+    border-radius: initial;
+}
+/****************************************************/
+/*********** Class répéter plusieurs fois ***********/
+/****************************************************/
+
+/********************** 3 trait *********************/
+.tripleLigneL, .tripleLigneR{
+    border-top: 1px #F73400 solid;
+    width: 30px;top: 26px;
+    position: absolute;
+    left: 30px;
+}
+.tripleLigneR{
+    left: 53%;
+}
+.middleLigneL, .middleLigneR{
+    height: auto;
+    border-top: #CB2A00 1px solid;
+    width: 20px;
+    margin-top: 2px;
+}
+.middleLigneL{
+    margin-left:10px;
+}
+.middleLigneR{
+    margin-right:10px;
+}
+.bottomLigneL, .bottomLigneR{
+    border-top: #741800 1px solid;
+    width: 10px;
+    margin-top: 2px;
+}
+.bottomLigneL{
+    margin-left: 20px;
+}
+.bottomLigneR{
+    margin-right:20px;
+}
+
+/********************** 5 trait *********************/
+.cinqLigneTop{
+    width: 5px;
+    height: 17px;
+    border-top: 1px solid #F73400;
+    border-bottom: 1px solid #F73400;
+}
+
+.cinqLigneDeux{
+    width: 15px;
+    height: 9px;
+    margin-top: 3px;
+    margin-left: -4px;
+    border-top: #CB2A00 solid 1px;
+    border-bottom: #CB2A00 solid 1px;
+    
+}
+
+.cinqLigneMiddle{
+    width: 25px;
+    margin-left: -5px;
+    margin-top: 3px;
+    border-top: #741800 solid 1px;
+}
+
+/******************* Divers ***********************/
+#fondFull {
+    display: none;
+}
+
+.width{width: 100%;
+}
+
+/****************************************************/
+/********************** Boutton *********************/
+/****************************************************/
+.button{
+    background-color: #02144E;
+    display: flex;
+    flex-direction: initial!important;
+    justify-content: center;
+}
+
+.button .cinqLigneTop{
+    margin-top: 18px;
+}
+
+.button a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.button a:hover{
+    color: #ffffff!important;
+}
+
+.bouttonChoix{
+    margin-top: -102px;
+    width: 100%;
+}
+
+
+
+/****************************************************/
+/*********************** Logo ***********************/
+/****************************************************/
+header .logo{
+    position: absolute;
+    left: calc(50% - 85px);
+    top: 0px;
+    z-index: 100;
+}
+
+.logo img{
+    width: 170px;
+    z-index: 60;
+}
+
+/****************************************************/
+/*********** Separateur header & main ***************/
+/****************************************************/
+#separateurHaut, #separateurHaut svg{
+    height: 100px;
+    width: 100%;
+    margin-top: -50px;
+}
+
+path{fill: white;
+}
+
+#separateur .logo{
+    left: calc(50% - 85px);
+    margin-top: -135px;
+    position: relative;
+    width: 250px;
+}
+
+/****************************************************/
+/******************** Media Queri *******************/
+/****************************************************/
+
+/****************************************************/
+/******************* de 576 à 719 *******************/
+@media all and (min-width: 576px){
+    
+}
+
+/****************************************************/
+/******************* de 720 à 991 *******************/
+@media all and (min-width: 720px){
+    
+}
+ 
+
+/****************************************************/
+/******************* de 992 à 1199 ******************/
+@media all and (min-width: 992px){
+    #fondSmart{
+        display: none;
+    }
+
+    .flex {display: flex;
+    }
+
+    .center{
+        text-align: center;
+        align-items: center;
+    }
+
+    #fondFull{
+        display: block;
+    }
+}
+
+/****************************************************/
+/********************** +1200 ***********************/
+@media all and (min-width: 1200px){
+}

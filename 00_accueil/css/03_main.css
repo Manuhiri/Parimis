@@ -1,0 +1,225 @@
+/****************************************************/
+/*********************** Main ***********************/
+/****************************************************/
+main section{
+    width: 80%;
+    margin: -15px auto;
+    border: #F73400 solid 1px;
+    padding: 50px 0;
+}
+
+main h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+main section a{
+    color: #02144E;
+}
+
+main p, main li{
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin: unset;
+}
+
+section a:hover{
+    border-bottom: #F73400 solid 1px;
+    color: #02144E;
+}
+
+
+/******************* Séparateur logo ****************/
+/****************************************************/
+.blocLogo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 106px;
+    top: -40px;
+}
+
+main .blocLogo p{
+    white-space: initial;
+}
+
+.fleche{
+    position: absolute;
+    top: 41px;
+    z-index: 99;
+}
+
+.fleche img{
+    width: 90px;
+}
+
+
+/*********************** Accueil ********************/
+/****************************************************/
+
+/********************* hotel ***********************/
+#hotel {
+    margin-top: -49px;
+}
+
+/********************* Chambre *********************/
+figcaption a, .redirection a, figcaption h5 a{
+    color: white;
+}
+
+figcaption a:hover, .redirection a:hover{
+    color: white;
+}
+
+main .cinqLigneTop, main .cinqLigneDeux, main .cinqLigneMiddle{
+    border-color: white;
+}
+
+figure{
+    margin: 15px 0;
+}
+
+figcaption{
+    position: relative;
+    margin-top: -55px;
+    background-color: rgba(2, 20, 78, 60%);
+    font-size: 1.4em;
+    color: white;
+}
+
+figcaption p{
+    font-size: 0.6em;
+}
+
+#chambre .redirection{
+    font-size: 1.9rem;
+}
+
+
+/********************** Resto **********************/
+#restaurant li{
+    padding: 1px;
+}
+
+/*********************** Spa ***********************/
+iframe {
+    width: 100%;
+}
+
+#spa .button{
+    margin-top: -7px;
+}
+
+/******************** Coordonnee ********************/
+#carte {
+    margin: 33px auto 0 auto;
+    padding: 0;
+    background-color: rgba(2, 20, 78, 60%);
+    color: white;
+    text-align: center;
+}
+
+#carte iframe{
+    opacity: 80%;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************/
+/************Media Queri***********/
+/**********************************/
+
+/*********************************/
+/***********de 576 à 719**********/
+@media all and (min-width: 576px){
+    
+}
+
+/*************************************/
+/***********de 720 à 991**********/
+@media all and (min-width: 720px){
+    /********************* Chambre *********************/
+    #chambre div{
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #chambre figure{
+        width: 40%;
+    }
+
+    #chambre .button{
+        justify-content: center;
+    }
+
+    #chambre .cinqLigneTop, #chambre .cinqLigneDeux, #chambre .cinqLigneMiddle{
+        display: block;
+    }
+
+    /***********Restaurant***********/
+    
+    .carousel-caption {
+        position: sticky;
+        margin-top: -55px;
+        z-index: 1;
+        background-color: rgba(2,20,78,0.6);
+        padding: 0;
+    }
+
+    .bd-example ol{
+        background-color: rgba(2, 20, 78, 60%);
+        margin: 0;
+    }
+}
+
+/*************************************/
+/***********de 992 à 1199**********/
+@media all and (min-width: 992px){
+    /********************* Chambre *********************/
+    #chambre figcaption{
+        display: none;
+        margin-top: -213px;
+        height: 213px;
+    }
+
+    #chambre figure:hover figcaption{
+        display: block;
+    }
+
+    
+    /********************* resto spa *********************/
+    .bd-example, #spa .button, #restaurant .button{
+        width: 70%;
+        margin: auto;
+    }
+    
+    /******************** Coordonnee ********************/
+    #carte div{
+        padding: 0 20px;
+    }
+
+}
+
+/*************************************/
+/***********+ 1200**********/
+@media all and (min-width: 1200px){
+    
+}

@@ -1,0 +1,266 @@
+/****************************************************/
+/*********************** Main ***********************/
+/****************************************************/
+main section{
+    border: none;
+}
+
+main h1,main h2{
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+    font-size: 3em;
+}
+
+main section a{
+    color: #02144E;
+}
+
+main p, main li{
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin: unset;
+}
+
+section a:hover{
+    border-bottom: #F73400 solid 1px;
+    color: #02144E;
+}
+
+main .cinqLigneTop, main .cinqLigneDeux, main .cinqLigneMiddle{
+    border-color: white;
+}
+
+/****************** figure figcaption ***************/
+/****************************************************/
+figcaption a, .redirection a, figcaption h5 a{
+    color: white!important;
+}
+
+figcaption a:hover, .redirection a:hover{
+    color: white;
+}
+
+figure{
+    margin: 15px 0;
+}
+
+figcaption{
+    position: relative;
+    margin-top: -55px;
+    background-color: rgba(2, 20, 78, 60%);
+    font-size: 1.4em;
+    color: white;
+}
+
+figcaption p{
+    font-size: 0.6em;
+}
+
+/*********************** iframe *********************/
+/****************************************************/
+iframe {
+    width: 100%;
+}
+
+/******************* Séparateur logo ****************/
+/****************************************************/
+.blocLogo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 106px;
+    top: -40px;
+}
+
+main .blocLogo p{
+    white-space: initial;
+}
+
+.fleche{
+    position: absolute;
+    top: 41px;
+    z-index: 99;
+}
+
+.fleche img{
+    width: 90px;
+}
+
+
+/****************** Page Accueil ********************/
+/****************************************************/
+#accueil section{
+    width: 80%;
+    margin: -15px auto;
+    border: #F73400 solid 1px;
+    padding: 50px 0;
+}
+
+#accueil h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+/********************* hotel ***********************/
+#hotel {
+    margin-top: -49px!important;
+}
+
+/********************* Chambre *********************/
+#chambre .redirection{
+    font-size: 1.9rem;
+}
+
+
+/********************** Resto **********************/
+#restaurant li{
+    padding: 1px;
+}
+
+/*********************** Spa ***********************/
+#spa .button{
+    margin-top: -7px;
+}
+
+/******************** Coordonnee ********************/
+#accueil #carte {
+    margin: 33px auto 0 auto!important;
+    padding: 0;
+    background-color: rgba(2, 20, 78, 60%);
+    color: white;
+    text-align: center;
+}
+
+#accueil #carte iframe{
+    opacity: 80%;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+/*********************** Chambre ********************/
+/****************************************************/
+#chambres figure {
+    border: #F73400 solid 1px;
+    margin: 33px 0;
+}
+
+#chambres figcaption{
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************/
+/************Media Queri***********/
+/**********************************/
+
+/*********************************/
+/***********de 576 à 719**********/
+@media all and (min-width: 576px){
+    
+}
+
+/*************************************/
+/***********de 720 à 991**********/
+@media all and (min-width: 720px){
+    /********************* Chambre *********************/
+    #chambre div{
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #chambre figure{
+        width: 40%;
+    }
+
+    #chambre .button{
+        justify-content: center;
+    }
+
+    #chambre .cinqLigneTop, #chambre .cinqLigneDeux, #chambre .cinqLigneMiddle{
+        display: block;
+    }
+
+    /********************** resto **********************/
+    .carousel-caption {
+        position: sticky;
+        margin-top: -66px;
+        z-index: 1;
+        background-color: rgba(2,20,78,0.6);
+        padding: 0;
+    }
+    #restaurant .button{
+        margin-top: -20px;
+    }
+}
+
+/*************************************/
+/***********de 992 à 1199**********/
+@media all and (min-width: 992px){
+    /********************* Chambre *********************/
+    #chambre figcaption{
+        display: none;
+        margin-top: -213px;
+        height: 213px;
+    }
+
+    #chambre figure:hover figcaption{
+        display: block;
+    }
+
+    /********************* resto spa *********************/
+    .bd-example, #spa .button, #restaurant .button{
+        width: 70%;
+        margin:  0 auto;
+    }
+    
+    /******************** Coordonnee ********************/
+    #carte div{
+        padding: 0 20px;
+    }
+
+
+
+
+    #confort figure, #suite figure, #degustation figure{
+        flex-direction: row-reverse;
+    }
+
+    main section{
+        width: 90%;
+        margin: auto;
+    }
+
+    #chambres figcaption{
+        width: 45%;
+        margin-top: 0;
+    }
+
+
+    
+
+
+}
+
+/*************************************/
+/***********+ 1200**********/
+@media all and (min-width: 1200px){
+
+}

@@ -1,0 +1,327 @@
+/****************************************************/
+/******************** Navigation ********************/
+/****************************************************/
+nav{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 150px);
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    z-index: 100;
+}
+
+nav h2, nav ul{
+    margin-bottom: 0;
+}
+
+nav h2 a:first-child{
+    display: flex;
+}
+
+nav li h2 {
+    padding: 15px 0 15px 65px;
+    background-color: #02144E;
+}
+
+nav p{
+    margin-bottom: 0;
+}
+
+
+/*********************** Logo ***********************/
+nav .logo{
+    order: 2;
+    text-align: center;
+    height: 85px;
+}
+
+
+/*************** hotel restaurant spa ***************/
+nav ul:nth-child(2){
+    order: 1;
+}
+
+nav .hotel, nav .contact{
+    position: relative;
+}
+
+/********************* Sous Menu ********************/
+nav .image{
+    display: none;
+}
+
+nav .sousMenu{
+    background-color: rgba(2, 20, 78, 60%);
+}
+
+nav .sousMenu li{
+    padding: 10px 0 10px 100px ;
+}
+
+nav .sousMenu a:hover{
+    border-bottom: 1px solid #F73400;
+}
+
+/********* Bloc recherche de la navigation **********/
+nav form{
+    order: 1;
+    padding: 60px 0 10px 0;
+    height: 125px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav form div:last-child{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 70%;
+    margin-left: -30px;
+}
+
+nav form{
+    background-color: rgba(2, 20, 78, 60%);
+}
+
+
+/****************************************************/
+/********************** Footer **********************/
+/****************************************************/
+footer .flex{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo{
+    text-align: center;
+}
+
+footer div{
+    flex-wrap: wrap;
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+/******************** Haut Footer *******************/
+#hautFooter{
+    height: 85px;
+    background-color: rgba(2, 20, 78, 60%);
+    border-top: #F73400 solid 1px;
+    margin-top: -88px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+footer i{
+    font-size: 1.7em;
+    color: white;
+    padding: 10px;
+}
+
+#hautFooter p{
+    width: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/********************* Bas Footer *******************/
+#basFooter{
+    padding: 10px 20px;
+    background-color: #02144E;
+    flex-wrap: wrap;
+}
+
+footer .cinqLigneTop{
+    margin: 0 15px 10px 0;
+}
+
+/****************************************************/
+/******************** Media Queri *******************/
+/****************************************************/
+
+/****************************************************/
+/******************* de 576 à 719 *******************/
+@media all and (min-width: 576px){
+    
+    /******************** Haut Footer *******************/
+    #hautFooter p {
+        width: 43%;    
+        justify-content: space-around!important;
+    }
+    
+    #basFooter .width{
+        width: 50%;
+    }
+}
+
+/****************************************************/
+/******************* de 720 à 991 *******************/
+@media all and (min-width: 720px){
+
+    
+}
+ 
+
+/****************************************************/
+/******************* de 992 à 1199 ******************/
+@media all and (min-width: 992px){
+    /******************** Navigation ********************/
+    nav{
+        width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    /*********************** logo ***********************/
+    nav .logo{
+        position: absolute;
+        left: calc( 50% - 85px );
+        z-index: 1;
+    }
+
+    /********************** Menu ************************/
+    nav ul:last-child, nav ul:nth-child(2){
+        order: initial;
+        width: 50%;
+    }
+
+    nav li h2{
+        padding: 0;
+        height: 85px;
+    }
+
+    nav .toggle{
+        width: 100%;
+    }
+
+    
+    /***************** bloc 1 *******************/
+    nav ul:last-child h2{
+        justify-content: flex-end;
+    }
+    
+    nav .hotel a{
+        margin: 0!important;
+    }
+
+    nav .hotel h2 {
+        padding-left: 35px;
+    }
+
+    nav ul:nth-child(2) .sousMenu{
+        left: 0;
+    }
+
+    nav .tripleLigneL, nav .tripleLigneR{
+        top: 42px;
+        left: 0;
+    }
+
+    /***************** bloc 2 *******************/
+    nav ul:last-child .image li{
+        width: 50%;
+    }
+
+    nav .contact{
+        width: 80%;
+    }
+
+    nav .contact h2{
+        padding-right: 35px;
+    }
+
+    nav ul:last-child .sousMenu{
+        right: 0;
+    }
+
+    nav .tripleLigneR{
+        left: calc(100% - 35px);
+    }
+
+    /*************** sous menu *****************/
+    nav .sousMenu{
+        position: absolute;
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    nav .sousMenu li{
+        padding: 10px 0 10px 20px;
+        font-size: 1.5rem;
+    }
+
+    nav .hotel .sousMenu, nav .contact .sousMenu{
+        position: fixed;
+    }
+
+    nav .image{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 55%!important;
+    }
+
+    nav .image li{
+        height: auto;
+    }
+
+    nav .image img{
+        width: 80%;
+        border: 1px solid #F73400;
+    }
+
+    nav .image i{
+        font-size: 2rem;
+        color: white;
+    }
+    
+    /********* Bloc recherche de la navigation **********/
+    nav form{
+        order: initial;
+        flex-direction: row-reverse;
+        padding: 0px 15px 0 0;
+        justify-content: flex-start;
+        width: 50%;
+        height: 85px;
+    }
+    
+    nav form div:last-child{
+        width: 20%;
+    }
+
+    /********************** Footer **********************/
+    #hautFooter{
+        height: 48px;
+    }
+
+    #basFooter .width:first-child, #basFooter .width:nth-child(3){
+        width: 21%;
+    }
+
+    #basFooter .width:last-child, #basFooter .width:nth-child(2){
+        width: 29%;
+    }
+
+    #basFooter .width:last-child, #basFooter .width:nth-child(3){
+        justify-content: flex-end;    
+    }
+}
+
+/****************************************************/
+/********************** +1200 ***********************/
+@media all and (min-width: 1200px){
+
+
+}

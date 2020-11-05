@@ -1,0 +1,141 @@
+main section{
+    border: none;
+}
+
+main h1,main h2{
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+    font-size: 3em;
+}
+
+figure {
+    flex-direction: column;
+    border: #F73400 solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main li{ 
+    width: 100%;
+}
+
+
+
+
+#classique, #brasserie{
+    padding: 0 0 50px 0;
+}
+
+#suite{
+    padding: 50px 0 0 0;
+}
+
+.prix{
+    width: 100%;
+    text-align: center;
+    background: rgba(2, 20, 78, 60%);
+    color: white;
+    border-top: #F73400 solid 1px;
+    padding: 20px;
+}
+
+.prix p{
+    text-indent: 0;
+
+}
+
+.commodite .flex{
+    flex-direction: column;
+}
+
+
+
+
+/**********************************/
+/************Media Queri***********/
+/**********************************/
+
+/*********************************/
+/***********de 576 à 719**********/
+@media all and (min-width: 576px){
+    
+    
+}
+
+/*************************************/
+/***********de 720 à 991**********/
+@media all and (min-width: 720px){
+    .commodite .flex{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .commodite{
+        border: #F73400 solid 1px;
+        padding: 0;
+    }
+    
+    ol{
+        width: 50%;
+    }
+}
+
+/*************************************/
+/***********de 992 à 1199**********/
+@media all and (min-width: 992px){
+    figure{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(2, 20, 78, 60%);
+        color: white;
+    }
+
+    #confort figure, #suite figure, #degustation figure{
+        flex-direction: row-reverse;
+    }
+
+    figcaption{
+        width: 45%;
+    }
+
+    figure img{
+        width: 55%!important;
+    }
+
+    main section{
+        width: 60%;
+    }
+
+    /************page chambre********/
+    .prix {
+        width: 60%;
+        margin: auto;
+    }
+
+    .commodite{
+        flex: wrap;
+    }
+
+    /***********page restaurant***********/
+    
+
+
+}
+
+/*************************************/
+/***********+ 1200**********/
+@media all and (min-width: 1200px){
+
+}

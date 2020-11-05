@@ -1,0 +1,399 @@
+/****************************************************/
+/*********************** Main ***********************/
+/****************************************************/
+main section{
+    border: none;
+}
+
+main h1,main h2, main .labelh2{
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+    font-size: 3em!important;
+}
+
+main section a{
+    color: #02144E;
+}
+
+main p, main li{
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+
+main .cinqLigneTop, main .cinqLigneDeux, main .cinqLigneMiddle{
+    border-color: white;
+}
+
+.whiteSpace{
+    white-space: initial;
+}
+
+/****************** figure figcaption ***************/
+/****************************************************/
+figcaption a, .redirection a, figcaption h5 a{
+    color: white!important;
+}
+
+figcaption a:hover, .redirection a:hover{
+    color: white;
+}
+
+figcaption{
+    position: relative;
+    margin-top: -65px;
+    background-color: rgba(2, 20, 78, 60%);
+    font-size: 1.4em;
+    color: white;
+}
+
+figcaption p{
+    font-size: 0.6em;
+}
+
+/*********************** iframe *********************/
+/****************************************************/
+iframe {
+    width: 100%;
+}
+
+/******************* Séparateur logo ****************/
+/****************************************************/
+.blocLogo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 106px;
+    top: -40px;
+}
+
+main .blocLogo p{
+    white-space: initial;
+}
+
+.fleche{
+    position: absolute;
+    top: 41px;
+    z-index: 50;
+}
+
+.fleche img{
+    width: 90px;
+}
+
+
+/****************** Page Accueil ********************/
+/****************************************************/
+#accueil section{
+    width: 80%;
+    margin: -15px auto;
+    border: #F73400 solid 1px;
+    padding: 50px 0;
+}
+
+#accueil h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#accueil a:hover{
+    color: #02144E;
+}
+
+/********************* hotel ***********************/
+#hotel {
+    margin-top: -49px!important;
+}
+
+/********************* Chambre *********************/
+#chambre .redirection{
+    font-size: 1.9rem;
+}
+
+/********************** Resto **********************/
+#restaurant li{
+    padding: 1px;
+}
+
+/*********************** Spa ***********************/
+#spa .button{
+    margin-top: -7px;
+}
+
+/******************** Coordonnee ********************/
+#accueil #carte {
+    margin: 33px auto 0 auto!important;
+    padding: 0;
+    background-color: rgba(2, 20, 78, 60%);
+    color: white;
+    text-align: center;
+}
+
+#accueil #carte iframe{
+    opacity: 80%;
+    width: 100%;
+}
+
+/******************* Page avis **********************/
+/****************************************************/
+#presentationHotel main, #reservation main, #accesContact main, #facture main{
+    padding-top: 680px;
+    width: 100%!important;
+}
+
+/****************** Page Chambre ********************/
+/****************************************************/
+#general figure {
+    margin: 33px 0;
+}
+
+#general figcaption{
+    margin-top: -80px;
+}
+
+/*********** Page Chambre Classique *****************/
+/****************************************************/
+.prix{
+    width: 100%;
+    text-align: center;
+    background: rgba(2, 20, 78, 60%);
+    color: white;
+    border-top: #F73400 solid 1px;
+    padding: 20px;
+}
+
+/************* Page Acces & Contact *****************/
+/****************************************************/
+
+#accesContact{background-image: url('../image/acces/acces.webp');}
+
+#reservation, #facture{background-image: url('../image/reservation/reservation.webp');}
+
+#presentationHotel{background-image: url('../image/nav/full/hotel.webp');}
+
+#accesContact, #reservation, #presentationHotel, #facture{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+}
+
+#accesContact iframe{
+    opacity: 80%;
+    padding: 0;
+    height: auto;
+}
+
+#accesContact label, #reservation label{
+    font-size: 1rem;
+}
+
+/******************* Page avis **********************/
+/****************************************************/
+#pannier {
+    position: relative;
+    z-index: -1;
+}
+
+/********* Page Mention legal condition *************/
+/****************************************************/
+#condition .cinqLigneTop, #condition .cinqLigneDeux, #condition .cinqLigneMiddle{
+    border-color: initial;
+}
+
+#condition .cinqLigneTop{
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+/******************* Site Map ***********************/
+/****************************************************/
+.siteMap li, .siteMap ul, .siteMap a{
+    margin: 0;
+    padding: 0;
+    white-space: initial;
+}
+
+.siteMap a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********************************/
+/************Media Queri***********/
+/**********************************/
+
+/*********************************/
+/***********de 576 à 719**********/
+@media all and (min-width: 576px){
+    
+}
+
+/*************************************/
+/***********de 720 à 991**********/
+@media all and (min-width: 720px){
+    main section{
+        width: 90%;
+        margin: auto;
+    }
+
+
+    /******************** Page Index ********************/
+    /****************************************************/
+    #chambre div{
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #chambre figure{width: 40%;
+    }
+
+    #chambre .button{justify-content: center;
+    }
+
+    #chambre .cinqLigneTop, #chambre .cinqLigneDeux, #chambre .cinqLigneMiddle{
+        display: block;
+    }
+
+    /********************** resto **********************/
+    .carousel-caption {
+        position: sticky;
+        margin-top: -66px;
+        z-index: 1;
+        background-color: rgba(2,20,78,0.6);
+        padding: 0;
+    }
+    #restaurant .button{margin-top: -20px;
+    }
+
+    /*********** Page Chambre Classique *****************/
+    /****************************************************/
+    #fondSmart img{
+        height: 100vh;
+    }
+    /*********** Page Chambre Classique *****************/
+    /****************************************************/
+    .commodite .flex{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .commodite{
+        border: #F73400 solid 1px;
+        padding: 0;
+    }
+    
+    ol{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+/*************************************/
+/***********de 992 à 1199**********/
+@media all and (min-width: 992px){
+    /****************** Page Index **********************/
+    /****************************************************/
+    #chambre figcaption{
+        display: none;
+        margin-top: -213px;
+        height: 213px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #chambre figure:hover figcaption{
+        display: flex;
+    }
+
+    /********************* resto spa *********************/
+    .bd-example, #spa .button, #restaurant .button{
+        width: 70%;
+        margin:  0 auto;
+    }
+    
+    /******************** Coordonnee ********************/
+    #carte div{
+        padding: 0 20px;
+    }
+    
+    /*********** Page Chambre restaurant spa ************/
+    /****************************************************/
+
+    #confort figure, #suite figure, #degustation figure, #soinDetente figure, #soinRelaxant figure, #soinEvasion figure{
+        flex-direction: row-reverse;
+    }
+
+    #general figcaption{
+        width: 70%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+    /**** Page Chambre classique confort deluxe suite ***/
+    /****************************************************/
+    .prix,.descriptif .button, .descriptif p{
+        width: 60%;
+        margin: auto;
+    }
+
+    .commodite{
+        flex: wrap;
+    }
+
+    .descriptif .button p{
+        padding: 10px 0;
+        margin: 0 0 0 10px ;
+        width: auto;
+    }
+
+
+    
+    /************* Page Acces & Contact *****************/
+    /****************************************************/
+    .cinqLigneTop div, .cinqLigneTop{
+        padding: initial!important;
+    }
+
+    #reservation main, #accesContact main, #facture main{
+        padding-top: 300px;
+    }
+
+    /*********** Page présentation Hotel ****************/
+    /****************************************************/
+
+    #presentationHotel .container{max-width: 100%;}
+}
+
+
+/*************************************/
+/***********+ 1200**********/
+@media all and (min-width: 1200px){
+    
+    /*********** Page Chambre restaurant spa ************/
+    /****************************************************/
+    
+    
+    #general section{
+        width: 60%;
+    }
+
+
+}

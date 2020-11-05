@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Récupération de la police d'écriture via google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+<!-- -->
+    <link rel="stylesheet" href="css/00_reset.css">
+
+<!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--lien animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+<!-- Lien du css -->
+    <link rel="stylesheet" href="css/01_style.css">
+    <link rel="stylesheet" href="css/02_nav_footer.html.css">
+    <link rel="stylesheet" href="css/03_main.css">
+
+<!-- Meta donnée -->
+    <meta charset="UTF-8">
+<!-- Mise en place su responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- descriptif de la page -->
+    <meta name="description" content="L’Hôtel Parimis a un style chic parisien et est composé de 20 chambres et 1 s suite, dont 15 chambres communicantes, idéales pour un appartement familial Arc de Triomphe Champs Elysées.">
+<!-- Titre de la page -->
+    <title>Chambre classique</title> 
+</head>
+
+<body>
+    <p id="fondSmart"><img src="image/nav/smart/classique.webp" alt="chambre classique Parimis" class="width"></p>
+
+    <p id="fondFull"><img src="image/nav/full/classique.webp" alt="chambre classique parimis" class="width"></p>
+
+    <nav>
+  <!-- Logo bar navigation -->
+      <div class="logo"><a href="index.html"><img src="image/logo/liseret2.png" alt="logo hotel parimis"></a></div>
+        
+  <!-- Menu Hotel Restaurant Spa -->
+        <ul class="flex">
+  <!-- Menu Hotel -->        
+          <li class="toggle hotel">
+            <div class="tripleLigneL">
+              <div class="middleLigneL"></div>
+              <div class="bottomLigneL"></div>
+            </div>
+            <h2 class="flex center"><a href="#">Hôtel</a></h2>
+  <!-- Sous Menu Hotel --> 
+            <div class="sousMenu flex">           
+              <ul>
+                <li><a href="01_hotel.html">L'hotel</a></li>
+                <li><a href="02_chambre_classique.html">Chambre classique</a></li>
+                <li><a href="02_chambre_confort.html">Chambre confort</a></li>
+                <li><a href="02_chambre_deluxe.html">Gamme deluxe</a></li>
+                <li><a href="02_chambre_suite.html">La suite</a></li>
+              </ul>
+  <!-- Image menu Hotel -->            
+              <ul class="image">
+                <li><h3><a href="02_chambre.html">Chambre</a></h3></li>
+                <li><img src="image/nav/full/chambre.webp" alt="Chambre Parimis"></li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Restaurant -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Restaurant</a></h2>
+  <!-- Sous Menu Restaurant -->
+            <div class="sousMenu flex">
+              <ul>
+                <li><a href="03_restaurant.html#brasserie">Carte brasserie</a></li>
+                <li><a href="03_restaurant.html#degustation">Carte restaurant</a></li>
+                <li><a href="03_restaurant.html#terasse">Dégustation</a></li>
+              </ul>
+  <!-- Image menu Restaurant -->
+              <ul class="image">
+                <li><h3><a href="03_restaurant.html">Restaurant</a></h3></li>
+                <li><img src="image/nav/full/restaurant.webp"   alt="restaurant Parimis"></li>
+              </ul>
+            </div>
+          </li>   
+  <!-- Menu Spa --> 
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Spa</a></h2>
+  <!-- Sous menu Spa -->
+            <div  class="sousMenu flex">
+              <ul>
+                <li><a href="04_spa.html#soinDetente">Minute détente</a></li>
+                <li><a href="04_spa.html#soinDecouverte">Moment découverte</a></li>
+                <li><a href="04_spa.html#soinRelaxant">Instant relaxant</a></li>
+                <li><a href="04_spa.html#soinPlaisir">Espace plaisir</a></li>
+                <li><a href="04_spa.html#soinEvasion">Page evasion</a></li>
+              </ul>
+  <!-- Image Spa-->    
+              <ul class="image">
+                <li><h3><a href="04_spa.html">Spa</a></h3></li>
+                <li><img src="image/nav/full/spa.webp" alt="spa Parimis"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        
+  <!-- Bloc recherche -->
+        <form id="pannier">
+          <div>
+            <i class="fas fa-search"></i>  <input type="text" id="recherche1" placeholder="Recherche">
+          </div>
+        
+          <div>
+            <p><i class="fas fa-shopping-bag"></i></p> 
+            <p>Fr <span>/</span> Eng</p>
+          </div>
+        </form>
+        
+  <!-- Menu Réservation Evènement Contact -->
+        <ul class="flex">
+  <!-- Menu Réservation -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Réservation</a></h2>
+  <!-- Sous menu reservation -->
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="05_reservation.html">Chambre</a></li>
+                <li><a href="05_reservation.html">Restaurant</a></li>
+                <li><a href="05_reservation.html">Spa</a></li>
+              </ul>
+  <!-- Newsletter menu reservation -->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                      <input type="email" class="form-control" placeholder="email" value="Email">
+                      <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu reservation -->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Evènement -->
+          <li class="toggle">
+            <h2 class="flex center"><a href="#">Rencontre</a></h2>
+  <!-- Sous menu evenement -->
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="06_evenement.html">Evènement</a></li>
+                <li><a href="07_actualitee.html">Actualité</a></li>
+                <li><a href="07_actualitee.html#press">La presse en Parle</a></li>
+              </ul>
+  <!-- Newsletter menu evenement-->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                    <input type="email" class="form-control" placeholder="email" value="Email">
+                    <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu evenement-->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+  <!-- Menu Contact -->
+          <li class="toggle contact">
+            <div class="tripleLigneR">
+              <div class="middleLigneR"></div>
+              <div class="bottomLigneR"></div>
+            </div>
+            <h2 class="flex center"><a href="#">Contact</a></h2>
+  <!-- Sous menu contact -->  
+            <div class="sousMenu flex blocDeux">
+              <ul>
+                <li><a href="09_acces_contact.html">Accès</a></li>
+                <li><a href="01_hotel.html#recrutement">Recrutement</a></li>
+                <li><a href="09_acces_contact.html#contact">Contact</a></li>
+              </ul>
+  <!-- Newsletter contact-->
+              <ul class="newsletter">
+                <li>Inscription à la newsletter</li>
+                <li>
+                  <form>
+                    <input type="email" class="form-control" placeholder="email" value="Email">
+                    <button class="btn btn-primary">Envoyer</button>
+                  </form>
+                </li>
+  <!-- Icone menu contact-->
+                <li class="icone">
+                  <a href="#" title="Imprimer la page" onclick="print();"><i class="fas fa-print"></i></a>
+                  <a href="09_acces_contact.html#contact" title="Adresse postale"><i class="fas fa-envelope-open-text"></i></a>
+                  <a href="10_avis.html" title="Donner votre avis"><i class="fas fa-pen-fancy"></i></a>
+                  <a href="mailto:adresse@email.com" title="Envoyer un mail"><i class="fas fa-at"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>                
+        </ul>
+    </nav>
+
+    <header>
+        <section id="separateur">
+            <div id="separateurHaut">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 100" preserveAspectRatio="none" class="width">
+                <path d="M 0,100 L 500,0 L 1000,100">
+              </svg>
+            </div>
+        
+            <div class="logo"><img src="image/logo/logo.png" alt="logo Parimis"></div>
+          </section>
+
+    </header>
+
+    <main class="descriptif">
+      <h1 class="width">Chambre Classique</h1>
+
+      <p>Camaïeu de couleurs douces et grand drapé de style «Empire», nos chambres classiques ont un charme typiquement parisien. Elles donnent soit sur l'une de nos cours fleuries soit sur la belle Avenue Montaigne. <br><br>Leur atmosphère confortable inspire quiétude et repos. Ces chambres élégantes sont toutes équipées d'un bureau pour travailler, écrire ou rêver. Les belles salles de bains de marbre avec baignoire et/ou douche sont équipées de produits Fragonard.
+      <br>Capacité : 3 personnes maximum</p>
+      
+      <div class="button">
+        <p class="decor"><a href="05_reservation.html"> Réservation</a></p>
+      </div>
+
+      <div class="prix">
+          <h4>À partir de 412 € par nuit</h4>
+          <p> Disponible à partir du 2020-10-26</p>
+      </div>
+
+      <section class="form-row w-100  my-4 mx-0">
+        <img src="image/chambre/chambre_1.webp" alt="chambre" class="border col-12 col-md-6 col-lg-3 p-0">
+        <img src="image/chambre/chambre_2.webp" alt="chambre" class="border col-12 col-md-6 col-lg-3 p-0">
+        <img src="image/chambre/chambre_3.webp" alt="chambre" class="border col-12 col-md-6 col-lg-3 p-0">
+        <img src="image/chambre/chambre_4.webp" alt="chambre" class="border col-12 col-md-6 col-lg-3 p-0">
+      </section>
+
+      <section class="commodite">
+        <h2>Commodités de la Chambre</h2>
+
+        <div class="flex">
+          <ol>
+            <li>Superficie : 38 m2</li>
+            <li>3 personnes maximum</li>
+            <li>lit king-size ou twin</li>
+            <li>Canapé lit 1 personne</li>
+            <li>Non fumeur</li>
+            <li>Air conditionné</li>
+            <li>Isolation phonique</li>
+            <li>Télévision à écran plat</li>
+          </ol>
+
+          <ol>
+            <li>Accès internet sans fil gratuit</li>
+            <li>Minibar</li>
+            <li>Coffre-fort</li>
+            <li>Equipements pour handicapé</li>
+            <li>Salle de bains avec baignoire</li>
+            <li>Sèche cheveux</li>
+            <li>Peignoirs et chaussons</li>
+          </ol>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <div class="logo"><a href="index.html"><img src="image/logo/liseret2.png" alt="logo hotel parimis"></a></div>
+<!-- Bloc icone du footer -->
+      <section id="hautFooter" class="flex">
+        <p class="flex">
+          <a href="09_acces_contact.html#contact" title="Adresse postale">
+            <i class="fas fa-envelope-open-text"></i>
+          </a>
+          
+          <a href="#" title="Imprimer la page" onclick="print();">
+            <i class="fas fa-print"></i>
+          </a>
+
+          <a href="mailto:adresse@email.com" title="Envoyer un mail">
+            <i class="fas fa-at"></i>
+          </a>
+          
+          <a href="10_avis.html" title="Donner votre avis">
+            <i class="fas fa-pen-fancy" title="laisser un avis"></i>
+          </a>
+          
+        </p>
+
+        <p class="flex">
+          <a href="#">
+            <i class="fab fa-instagram" title="Intagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-facebook-f" title="Facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin-in" title="Linkedin"></i>
+          </a>
+        
+          <a href="#">
+            <i class="far fa-share-square" title="Partager la page"></i>
+          </a>
+        </p>
+      </section>
+
+<!-- Bloc cgv cgu ml ps-->
+<!-- class decor, élément de décoration inserer en js -->
+      <section id="basFooter" class="flex width">
+        <div class="flex  width">
+          <p class="decor"><a href="11_mention_lega.html"> Mention Légal</a></p>
+        </div>
+        
+        <div class="flex width">
+          <p class="decor"><a href="12_condition_vente.html"> Condition Général de vente</a></p>
+        </div>
+        
+        <div class="flex width">
+          <p class="decor"><a href="13_sitemap.html"> Plan du site</a></p>
+        </div>
+
+        <div class="flex width">
+          <p class="decor"><a href="14_condition_gnr_util.html"> Condition général d'utilisation</a></p>
+        </div>
+        
+      </section> 
+
+      <p>&#169; Manuhiri ANIHIA site portfolio</p>
+    
+    </footer>
+
+
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="js/01_style.js"></script>
+
+<!-- Script font awesome -->
+  <script src="https://kit.fontawesome.com/6844cc6fe5.js" crossorigin="anonymous"></script>
+</body>
+</html>

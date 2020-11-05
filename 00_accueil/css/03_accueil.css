@@ -1,0 +1,154 @@
+/***********hotel***********/
+#hotel {
+    margin-top: -49px;
+}
+
+/***********Chambre***********/
+#chambre div{
+    flex-direction: column;
+}
+
+figure{
+    margin: 15px 0;
+}
+
+figcaption{
+    position: relative;
+    margin-top: -55px;
+    background-color: rgba(2, 20, 78, 60%);
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+}
+
+figcaption p{
+    font-weight: initial;
+    font-size: 0.6em;
+    text-indent: 0;
+}
+
+#chambre button{
+    font-size: 1.9rem;
+}
+
+.portfolioChambre {
+    margin-bottom: 35px;
+}
+
+
+/***********Restaurant***********/
+.carousel-caption{
+    position: initial;
+}
+
+.bd-example h5{
+    font-size: 1.8em;
+    background-color: rgba(2, 20, 78, 60%);
+}
+
+main li{
+    padding: 1px;
+}
+
+/*********** Spa ***********/
+iframe {
+    width: 100%;
+}
+
+#spa button{
+    margin-top: -3px;
+}
+
+/**********************************/
+/************Media Queri***********/
+/**********************************/
+
+/*********************************/
+/***********de 576 à 719**********/
+@media all and (min-width: 576px){
+    
+}
+
+/*************************************/
+/***********de 720 à 991**********/
+@media all and (min-width: 720px){
+    /***********Chambre***********/
+    
+
+    #chambre div{
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #chambre figure{
+        width: 40%;
+    }
+
+    #chambre figcaption{
+        height: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /***********Restaurant***********/
+    
+    .carousel-caption {
+        position: sticky;
+        margin-top: -55px;
+        z-index: 1;
+        background-color: rgba(2,20,78,0.6);
+        padding: 0;
+    }
+
+    .bd-example ol{
+        background-color: rgba(2, 20, 78, 60%);
+        margin: 0;
+    }
+}
+
+/*************************************/
+/***********de 992 à 1199**********/
+@media all and (min-width: 992px){
+
+    /***********Chambre***********/
+
+
+    #chambre figcaption{
+        display: none;
+        margin-top: -216px;
+        height: 213px;
+    }
+
+    #chambre figure:hover figcaption{
+        display: flex;
+    }
+
+
+
+    /*********restaurant**********/
+    .bd-example {
+        width: 50%;
+        margin: auto;
+    }
+
+    /***********spa**********/
+    #spa{
+        text-align: center;
+    }
+    #spa iframe {
+        width: 50%;
+    }
+
+}
+
+/*************************************/
+/***********+ 1200**********/
+@media all and (min-width: 1200px){
+
+    #spa iframe{
+        height: 400px;
+    }
+}

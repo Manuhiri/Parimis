@@ -1,0 +1,28 @@
+body{
+    background-image: url(../image/reservation/reservation.webp);
+    background-size: cover;
+}
+
+main{
+    margin-top: 540px;
+}
+
+main form{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #F73400;
+}
+
+main form p {
+    font-size: 1.1rem;
+}
+
+label{
+    padding: 10px 0;
+}
+
+form button{
+    margin: 10px auto;
+}
+
